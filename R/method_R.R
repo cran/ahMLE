@@ -325,7 +325,7 @@ mle_simpl_SStep_R <- function(time_indicator,combi_indicator,InputData,matrix_do
 mle_opt_sub <- function(time_indicator,InputData){
   
   p = ncol(InputData)-1-1
-  matrix_domain  = Calc_BinaryDomain(p) 
+  #matrix_domain  = Calc_BinaryDomain(p) 
   
   J = matrix(ncol = p+1, nrow =  2*p, 0)
   for(i in 1:p){

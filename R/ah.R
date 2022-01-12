@@ -84,10 +84,7 @@ ah <-function(formula = formula(data), data = sys.parent(),  matrix_domain = NUL
     
   }else{
     
-    # make the domain matrix
-    if(is.null(matrix_domain)){
-      matrix_domain  = Calc_BinaryDomain(p)  
-    }
+
     
     #test
     #print(head(matrix_design))
@@ -101,6 +98,15 @@ ah <-function(formula = formula(data), data = sys.parent(),  matrix_domain = NUL
     }
     
     #print(matrix_design_R)
+    
+    # make the domain matrix
+    if(1 != method_numeric){
+      if(is.null(matrix_domain)){
+        matrix_domain  = Calc_BinaryDomain(p)  
+      }
+    }
+
+    
     
     result <- mle_addhazardbase(InputData = matrix_design_R, matrix_domain, progbar, method_numeric, startedge)
     names(result$beta) = c("time", "intercept" ,attr(terms(formula),"term.labels"))
