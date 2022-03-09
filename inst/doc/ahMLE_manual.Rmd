@@ -129,6 +129,6 @@ par(old.par)
 
 ## 4. Acknowledgement
 
-The project is sponsored by the Leiden University Fund / Hakkenberg $\alpha$ $\beta$ $\gamma$-integratie Fonds, www.luf.xn--nl-02t. We would like to thank and acknowledge their support.
+The project is sponsored by the Leiden University Fund / Hakkenberg $\alpha$ $\beta$ $\gamma$-integratie Fonds, www.luf.nl. We would like to thank and acknowledge their support.
 
 We acknowledge the authors of the package `invGauss` for importing their clinical data of carcinoma of the oropharynx.
